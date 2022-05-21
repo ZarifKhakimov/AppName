@@ -27,7 +27,7 @@ public class Last extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_last);
-        setTags(findViewById(R.id.et_simple), "hd gcbfg #jfn #jhgnm");
+        setTags(findViewById(R.id.et_simple), "I would #like to do #something similar to the #Twitter app");
     }
 
         private void setTags(TextView pTextView, String pTagString) {
@@ -40,8 +40,7 @@ public class Last extends AppCompatActivity {
                 } else if (pTagString.charAt(i) == ' ' || pTagString.charAt(i) == '\n' || (i == pTagString.length() - 1 && start != -1)) {
                     if (start != -1) {
                         if (i == pTagString.length() - 1) {
-                            i++; // case for if hash is last word and there is no
-                            // space after word
+                            i++;
                         }
 
                         final String tag = pTagString.substring(start, i);
@@ -55,7 +54,7 @@ public class Last extends AppCompatActivity {
                             @Override
                             public void updateDrawState(TextPaint ds) {
                                 // link color
-                                ds.setColor(Color.parseColor("#33b5e5"));
+                                ds.setColor(Color.parseColor("#0AE81E"));
                                 ds.setUnderlineText(false);
                             }
                         }, start, i, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);

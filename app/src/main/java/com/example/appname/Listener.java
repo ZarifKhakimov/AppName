@@ -74,7 +74,7 @@ public class Listener extends AppCompatActivity {
      void initViews2(){
          Spannable string = null;
          int start = -1;
-        String pTagString = "jdbfd #bfsv jbfsbg #hgsfhfn";
+        String pTagString = "I would #like to do #something similar to the #Twitter app";
 
         for (int i = 0; i < pTagString.length(); i++) {
             if (pTagString.charAt(i) == '#') {
@@ -97,7 +97,7 @@ public class Listener extends AppCompatActivity {
                         @Override
                         public void updateDrawState(TextPaint ds) {
                             // link color
-                            ds.setColor(Color.parseColor("#33b5e5"));
+                            ds.setColor(Color.parseColor("#0AE81E"));
                             ds.setUnderlineText(false);
                         }
                     }, start, i, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
